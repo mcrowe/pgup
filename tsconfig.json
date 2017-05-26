@@ -3,10 +3,16 @@
     "module": "commonjs",
     "declaration": true,
     "outDir": "lib/",
-    "target": "es2015"
+    "target": "es2015",
+    "noImplicitAny": false,
+    "strictNullChecks": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "pretty": true
   },
   "include": [
     "src/**/*"
   ],
+  "allowJS": false,
   "compileOnSave": true
 }
