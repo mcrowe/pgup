@@ -6,13 +6,13 @@ import morgan = require('morgan')
 import bodyParser = require('body-parser')
 import pgp = require('pg-promise')
 
-if (process.argv.length < 2) {
+if (process.argv.length < 3) {
   console.log('Usage: pgup [connection_string]')
   process.exit(1)
 }
 
 const PORT = process.env.PORT || 3876
-const DATABASE_URL = process.argv[1]
+const DATABASE_URL = process.argv[2]
 
 const db = pgp()(DATABASE_URL)
 
