@@ -1,10 +1,14 @@
 # pgup
 
-Simple SQL server for postgres
+Simple SQL server for postgres.
+
+This is a basic script that allows you to make http requests directly to a local database. Useful for creating local reports that run on a browser.
 
 ## Usage
 
-> npm install @mcrowe/pgup --save
+> npm install -g @mcrowe/pgup
+
+> pgup [database_url]
 
 ## Development
 
